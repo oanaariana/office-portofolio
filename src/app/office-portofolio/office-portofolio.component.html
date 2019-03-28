@@ -1,0 +1,19 @@
+<h3>Office Portofolio</h3>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Usage</th>
+      <th>Capacity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let elem of table; let i = index">
+      <td>{{ elem.code }}</td>
+      <td>{{elem.totalAmountDesks}}</td>
+      <td>{{elem?.usage}}</td>
+      <td>{{elem?.capacity}}</td> 
+    </tr>
+  </tbody>
+</table>
